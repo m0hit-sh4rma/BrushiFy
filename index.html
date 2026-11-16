@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrushiFy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>BrushiFy</h1>
+      <div id="main-div" contenteditable="true"></div>
+
+      <br><br>
+
+      <button id="download">download</button>
+
+      <br><br><br>
+
+      <div id="buttons">
+        <div id="background-color">
+          <h2>choose background color</h2>
+          <button onclick="changeBackgroundColor('#603813')" class="btn" style="background-color: #603813;"></button>
+          <button onclick="changeBackgroundColor('#ff6e7f')" class="btn" style="background-color: #ff6e7f;"></button>
+          <button onclick="changeBackgroundColor('#77A1D3')" class="btn" style="background-color: #77A1D3;"></button>
+          <button onclick="changeBackgroundColor('#753a88')" class="btn" style="background-color: #753a88;"></button>
+          <button onclick="changeBackgroundColor('#BBD2C5')" class="btn" style="background-color: #BBD2C5;"></button>
+        </div>
+
+        <div id="text-color">
+          <h2>choose text color</h2>
+          <button onclick = "changeTextColor('#b29f94')" class="btn" style="background-color: #b29f94;"></button>
+          <button onclick = "changeTextColor('#bfe9ff')" class="btn" style="background-color: #bfe9ff;"></button>
+          <button onclick = "changeTextColor('#E684AEA')" class="btn" style="background-color: #E684AE;"></button>
+          <button onclick = "changeTextColor('#cc2b5e')" class="btn" style="background-color: #cc2b5e;"></button>
+          <button onclick = "changeTextColor('#536976')" class="btn" style="background-color: #536976;"></button>
+        </div>
+
+        <div id="font-color">
+          <h2>choose font</h2>
+          <button onclick="changeFont('cursive')" class="font-btn" style="font-family: cursive;">Hello</button>
+          <button onclick="changeFont('segoe UI')" class="font-btn" style="font-family: segoe UI;">Hello</button>
+          <button onclick="changeFont('Courier New')" class="font-btn" style="font-family: Courier New;">Hello</button>
+        </div>
+      </div>
+    </center>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.getElementById("main-div").style.backgroundColor = color;
+        }
+
+        function changeTextColor (color) {
+            document.getElementById("main-div").style.color = color;
+        }
+
+        function changeFont (font) {
+            document.getElementById("main-div").style.fontFamily = font;
+        }
+    </script>
+  </body>
+</html>
